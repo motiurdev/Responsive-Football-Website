@@ -30,7 +30,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
 }
 
 .btn {
@@ -52,7 +52,9 @@ img {
     width: 100%;
 }
 
-/* Banner Style */
+/* ---------------
+ Banner Style 
+ -------------*/
 
 .banner {
     background-color: var(--bg-color);
@@ -83,10 +85,12 @@ i.fas.fa-arrow-right {
     margin-left: -50px;
 }
 
-/* top player */
+/* -------------
+ top player style
+--------*/
 
 .top-player {
-    padding: 100px 0;
+    padding: 80px 0;
     background-color: #EDEDED;
 }
 
@@ -118,12 +122,14 @@ i.fas.fa-arrow-right {
     line-height: 26px;
 }
 
-/* top highlight */
+/* ----------------
+top highlight
+------------ */
 
 .top-highlight {
     background: #EDEDED;
     padding-top: 65px;
-    padding-bottom: 158px;
+    padding-bottom: 70px;
 }
 
 .highlight-content {
@@ -145,7 +151,9 @@ i.fas.fa-arrow-right {
 }
 
 
-/* Teams */
+/* --------------
+Teams 
+-------------*/
 
 .all-team {
     background: #EDEDED;
@@ -164,11 +172,13 @@ i.fas.fa-arrow-right {
 }
 
 
-/* Latest Video */
+/* --------------
+Latest Video 
+------------*/
 
 .latest-video {
     background: #EDEDED;
-    padding-bottom: 122px;
+    padding-bottom: 154px;
 }
 
 .latest-video h1 {
@@ -183,7 +193,9 @@ i.fas.fa-arrow-right {
     gap: 30px;
 }
 
-/* footer */
+/* ----------------
+footer 
+--------------*/
 
 footer {
     background: #EDEDED;
@@ -199,8 +211,7 @@ footer .flex {
 }
 
 footer img {
-    width: 483px;
-    height: 110px;
+    width: 405px;
 }
 
 .social-link {
@@ -229,12 +240,14 @@ footer p {
 }
 
 
-/* Media Queries */
+/* ----------------
+Media Queries 
+-------------*/
 
 
-/* Mobile Device */
+/* ---- Mobile Device ----*/
 
-@media(max-width: 600px) {
+@media(max-width: 688px) {
 
     /* top banner */
     .banner-content h1{
@@ -245,7 +258,7 @@ footer p {
     }
 
     .banner-img img {
-        width: 330px;
+        width: 300px;
         height: 259px;
     }
     .flex {
@@ -259,6 +272,7 @@ footer p {
 
     .top-player {
         padding: 62px 0;
+        padding-bottom: 0;
     }    
     .players {
         grid-template-columns: repeat(1,1fr);
@@ -298,3 +312,45 @@ footer p {
     }
     
   }
+
+  /* -----Tablet Device -----*/
+
+@media(min-width: 689px) and (max-width: 992px) {
+    .banner-img {
+        width: 50%;
+    }
+    .banner-img img {
+        width: 326px;
+        height: 333px;
+        margin-left: 12px;
+    }
+    .banner-content h1 {
+        font-size: 36px;
+    }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .players {
+        grid-template-columns: repeat(2,1fr);
+    }
+    .flex {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .highlight-content h1 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .highlight-content {
+        width: 45%;
+    }
+    .highlight-img {
+        width: 55%;
+    }
+}
